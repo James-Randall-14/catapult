@@ -138,7 +138,9 @@
     It's a golf ball. 
     This is because a lighter projectile would yield a more uniform moment of inertia for the catapult arm.
     If the projectile were disproportionately heavy, the estimated moment of inertia would be less accurate.
-    Because the projectile is prone to bouncing and rolling after impact with the ground, it is advised to use the catapult on a flat surface of sand or gravel so that the first impact of the ball is visible. This was the case in the experimental setup.
+    Golf balls are also less prone to disruption by air resistance, because of the design of their surface and some other factors that are beyond the scope of this paper.
+    Because the projectile is prone to bouncing and rolling after impact with the ground, it is advised to use the catapult on a flat surface of sand or gravel so that the first impact of the ball is visible. 
+    This was the case in the experimental setup.
 
   \subsection{Bungees}
     \par
@@ -389,6 +391,26 @@
       \end{center}
 
       Plugging the experiment's conditions into the model derived in section IV gives a theoretical distance of 15.54 meters.
+
+      \par 
+      Percent Error is therefore:
+      $$ \left| \frac{14.87 - 15.54}{15.54} \right| \cdot 100\% = 4.3\% $$
+
+    \subsection{Sources of Error}
+      There are several large sources of error in this experiment:
+      \begin{itemize}
+        \item In the equations, it was assumed that the bungees were always attached to the arm at a fixed point. 
+          This was not the case. 
+          They were allowed to slide up and down the arm as it rotated so that the bungees would travel in a straight line.
+          This meant that the value of $r_i$ in the math varied by about 0.03 over the course of the launch period.
+        \item The bungees have a slight tension in the neutral position, meaning that the bungee's displacement never actually reaches 0, and is offset by a positive constant during the launch period.
+        \item Air resistance was not factored in to the prediction. 
+          This would potentially decrease the actual travel distance of the ball, and lead to discrepancies between the catapult and the model.
+          Although golf balls are less prone to air resistance, it is still not a factor that can be ignored.
+      \end{itemize}
+
+    \subsection{Conclusion}
+      This model was significantly more accurate than was expected. Originally there were several errors in the equation, leading to a percent error of approximately 20\%. Tweaking the model has made it an accurate prediction of the horizontal launch distance of the catapult.
 
 \end{flushleft}
 \end{document}
